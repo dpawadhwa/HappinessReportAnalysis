@@ -24,4 +24,15 @@ select `Country`, `Overall Rank`, `Score`, '2018' from `worldhappinessreport2015
 
 select `Country`, `Overall Rank`, `Score`, '2019' from `worldhappinessreport2015-2019.HappinessReport.Happiness2019` order by `Overall Rank` asc limit 10
 
+  /*select bottom 5 Government Corrupt Countries as per World Happiness Report*/
+select `Country`, `Happiness Rank`, `GovermentCorruption`, '2015' from `worldhappinessreport2015-2019.HappinessReport.Happiness2015` order by `GovermentCorruption` desc limit 5
+
+select `Country`, `Happiness Rank`, `GovermentCorruption`, '2016' from `worldhappinessreport2015-2019.HappinessReport.Happiness2016` order by `GovermentCorruption` desc limit 5
+
+select `Country`, `Happiness_Rank`, `GovernmentCorruption`, '2017' from `worldhappinessreport2015-2019.HappinessReport.Happiness2017` order by `GovernmentCorruption` desc limit 5
+
+select `Country`, `Overall rank`, `GovernmentCorruption`, '2018' from `worldhappinessreport2015-2019.HappinessReport.Happiness2018` order by `GovernmentCorruption` desc limit 6
+
+select `Country`, `Overall rank`, `GovermentCorruption`, '2019' from `worldhappinessreport2015-2019.HappinessReport.Happiness2019` order by `GovermentCorruption` desc limit 5
+
 
