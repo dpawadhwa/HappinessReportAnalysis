@@ -13,3 +13,15 @@ select * from `worldhappinessreport2015-2019.HappinessReport.Happiness2019` orde
 select COUNT(Country),Region from 
 (select * from `worldhappinessreport2015-2019.HappinessReport.Happiness2019` order by `Overall Rank` asc limit 50) as tb1  group by tb1.Region
 
+/*select Top 10 countries from yeaer 2015-2019*/
+  select * from `worldhappinessreport2015-2019.HappinessReport.Happiness2015` order by `Happiness Rank` asc limit 10
+
+select `Country`, `Happiness Rank`, `Happiness Score`, '2016' from `worldhappinessreport2015-2019.HappinessReport.Happiness2016` order by `Happiness Rank` asc limit 10
+
+select `Country`, `Happiness_Rank`, `Happiness_Score`, '2017' from `worldhappinessreport2015-2019.HappinessReport.Happiness2017` order by `Happiness_Rank` asc limit 10
+
+select `Country`, `Overall Rank`, `Score`, '2018' from `worldhappinessreport2015-2019.HappinessReport.Happiness2018` order by `Overall Rank` asc limit 10
+
+select `Country`, `Overall Rank`, `Score`, '2019' from `worldhappinessreport2015-2019.HappinessReport.Happiness2019` order by `Overall Rank` asc limit 10
+
+
